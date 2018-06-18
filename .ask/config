@@ -1,7 +1,7 @@
 {
   "deploy_settings": {
     "hide-dev": {
-      "skill_id": "",
+      "skill_id": "amzn1.ask.skill.348dd8fe-9e02-4802-9010-04c6c7916e0c",
       "was_cloned": false,
       "merge": {
         "manifest": {
@@ -13,7 +13,8 @@
             }
           }
         }
-      }
+      },
+      "in_skill_products": []
     }
   }
 }
