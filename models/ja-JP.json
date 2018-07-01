@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "地震避難チェックリスト",
+      "invocationName": "地震避難サポーター",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -45,6 +45,9 @@
           "name": "AskPrepareIntent",
           "slots": [],
           "samples": [
+            "事前に用意した方がいいもの",
+            "事前に用意した方がいいものは",
+            "事前に用意した方がいいものはなに",
             "事前に準備しておくべきことはありますか",
             "事前に準備しておくべきことはなに",
             "事前に準備しておくべきことは",

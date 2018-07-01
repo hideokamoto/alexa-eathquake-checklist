@@ -5,22 +5,21 @@
         "ja-JP": {
           "summary": "地震が起きた時に何をしたらいいかを調べるスキルです。",
           "examplePhrases": [
-            "アレクサ、地震避難チェックリストを開いてリストを読み上げて",
+            "アレクサ、地震避難サポーターを開いてリストを読み上げて",
             "避難前にやるべきことを教えて",
             "事前に用意した方がいいものはなに"
           ],
           "keywords": [
-            "地震",
-            "チェックリスト"
+            "地震"
           ],
-          "name": "地震避難チェックリスト",
+          "name": "地震避難サポーター",
           "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/8fb2/7bc1d6747c194fc9aa8b45e355fd217f/APP_ICON?versionId=eVwPw81HrAnDcz0e91s1k49qwSLqogeI&AWSAccessKeyId=AKIAI3X6PUXD7CU5F5BQ&Expires=1529387339&Signature=RYJRAr8AK7z1Bvlvc3fydj5ta8M%3D",
           "description": "地震が起きた時に何をしたらいいかを調べるスキルです。避難用品などの情報は、西宮市のwebサイトの情報を元にしています。",
           "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/486e/977f1b25aa4a4e1486be1a53153151ee/APP_ICON_LARGE?versionId=7ruk61jAKySHwKNOq.YJPe4RjWHYgLTu&AWSAccessKeyId=AKIAI3X6PUXD7CU5F5BQ&Expires=1529387339&Signature=r%2F4J4EGDG6qmrGDmoA36lUxYRMc%3D"
         }
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "アレクサ、地震避難チェックリストを開いてリストを読み上げて。\n避難前にやるべきことを教えて\n事前に用意した方がいいものはなに",
+      "testingInstructions": "アレクサ、地震避難サポーターを開いてリストを読み上げて。\n避難前にやるべきことを教えて\n事前に用意した方がいいものはなに",
       "category": "HOME_SERVICES",
       "distributionCountries": []
     },

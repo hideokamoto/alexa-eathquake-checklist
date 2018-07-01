@@ -6,10 +6,10 @@ const { randomResponse, intentHandlers } = require('ask-utils')
 const { getRandomMessage } = randomResponse
 const { canHandle } = intentHandlers
 
-const SKILL_NAME = '地震避難チェックリスト'
+const SKILL_NAME = '地震避難サポーター'
 const preMessages = [
-  '地震避難チェックリストです。',
-  '地震避難チェックリストを起動します。'
+  '地震避難サポーターです。',
+  '地震避難サポーターを起動します。'
 ]
 const questions = [
   '「避難前の確認」「事前準備リスト」のどれが知りたいですか？',
@@ -22,7 +22,7 @@ const exitMessages = [
 
 const LaunchRequestHandler = {
   canHandle (handlerInput) {
-    return false // canHandle(handlerInput, 'LaunchRequest')
+    return canHandle(handlerInput, 'LaunchRequest')
   },
   handle (handlerInput) {
     const preText = getRandomMessage(preMessages)
@@ -38,7 +38,7 @@ const LaunchRequestHandler = {
 
 const AskRefugeCheckListIntent = {
   canHandle (handlerInput) {
-    return canHandle(handlerInput, 'IntentRequest', 'AskRefugeCheckListIntent') || canHandle(handlerInput, 'LaunchRequest')
+    return canHandle(handlerInput, 'IntentRequest', 'AskRefugeCheckListIntent')
   },
   handle (handlerInput) {
     let speechText = '揺れが落ち着くまでは身の安全の確保に専念してください。'
@@ -109,7 +109,7 @@ const AskPrepareIntent = {
       '個人備蓄では、一人１日３リットル程度の飲料水があることをオススメします。また、卓上コンロやガスボンベなどでお湯を沸かせる状態にしておきましょう。非常食の他に、毛布や洗面用具なども必需品となりますので、忘れないようにしましょう。',
       '懐中電灯・水・携帯ラジオ・食料・乾電池・卓上コンロ・タオル・現金・ポリタンク・救急セットの１０点があると、災害時に役立ちます。'
     ]
-    const speechText = getRandomMessage(messages + '詳しくは、「人と防災未来センター」の公開している減災グッズチェックリストを御覧ください。')
+    const speechText = getRandomMessage(messages) + '詳しくは、「人と防災未来センター」の公開している減災グッズチェックリストを御覧ください。'
 
     return handlerInput.responseBuilder
       .speak(speechText)
