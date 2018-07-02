@@ -1,5 +1,37 @@
 {
   "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.348dd8fe-9e02-4802-9010-04c6c7916e0c",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-earthquake-hide-dev"
+              }
+            }
+          }
+        }
+      },
+      "in_skill_products": [],
+      "resources": {
+        "manifest": {
+          "eTag": "dac56aeaaf1ac78221b5d8f3e3454656"
+        },
+        "interactionModel": {
+          "ja-JP": {
+            "eTag": "0c36eb114e0311917bb2c88e3def5e6e"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:372284591230:function:ask-custom-earthquake-hide-dev",
+            "revisionId": "5267ea90-da9e-4965-9df2-43be3c06c090"
+          }
+        ]
+      }
+    },
     "hide-dev": {
       "skill_id": "amzn1.ask.skill.348dd8fe-9e02-4802-9010-04c6c7916e0c",
       "was_cloned": false,
@@ -14,7 +46,23 @@
           }
         }
       },
-      "in_skill_products": []
+      "in_skill_products": [],
+      "resources": {
+        "manifest": {
+          "eTag": "dac56aeaaf1ac78221b5d8f3e3454656"
+        },
+        "interactionModel": {
+          "ja-JP": {
+            "eTag": "0c36eb114e0311917bb2c88e3def5e6e"
+          }
+        },
+        "lambda": [
+          {
+            "arn": "arn:aws:lambda:us-east-1:372284591230:function:ask-custom-earthquake-hide-dev",
+            "revisionId": "07fb10d6-adeb-491d-9da7-ebed65b0c0b9"
+          }
+        ]
+      }
     }
   }
 }

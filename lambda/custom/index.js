@@ -124,11 +124,11 @@ const HelpIntentHandler = {
       handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent'
   },
   handle (handlerInput) {
-    const speechText = 'このスキルでは、地震発生後にやるべきことや持って行くべきものを紹介します。避難用品などの情報は、西宮市のwebサイトの情報を元にしています。'
     const repromptText = getRandomMessage(questions)
+    const speechText = 'このスキルでは、地震発生後にやるべきことや持って行くべきものを紹介します。避難用品などの情報は、西宮市のwebサイトの情報を元にしています。'
 
     return handlerInput.responseBuilder
-      .speak(speechText)
+      .speak(`${speechText}${repromptText}`)
       .reprompt(repromptText)
       .withSimpleCard(SKILL_NAME, speechText)
       .getResponse()
